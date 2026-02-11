@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+  <img src="flopink.png" alt="Logo">
+</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#profile">Our Profile</a>
+    <a href="#portfolio">Portofolio</a>
+    <a href="#message">Message Us</a>
+  </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="section hero">
+  <h1 id="welcomeText">Hi, Welcome To Website</h1>
+  <p>Ini adalah website latihan pertama</p>
+  <div class="banner">
+  <img src="images.jpeg" alt="Banner">
+</div>
+</section>
+
+<!-- PROFILE -->
+<section id="profile" class="section profile-section">
+
+  <div class="profile-header">
+    <h2>Our Profile</h2>
+    <p>Innovating Digital Solutions for a Better Tomorrow</p>
+  </div>
+
+  <div class="profile-container">
+
+    <!-- Company Description -->
+    <div class="profile-content">
+
+      <h3>About The Company</h3>
+      <p>
+        PT Flopink Digital adalah perusahaan yang bergerak di bidang
+        teknologi dan pengembangan solusi digital. Kami membantu bisnis dalam
+        melakukan transformasi digital melalui pengembangan website, aplikasi,
+        dan sistem informasi yang inovatif dan efisien.
+      </p>
+
+      <h3>Vision</h3>
+      <p>
+        Menjadi perusahaan teknologi terdepan di Indonesia yang memberikan
+        dampak positif bagi masyarakat dan dunia bisnis melalui inovasi digital.
+      </p>
+
+      <h3>Mission</h3>
+      <ul>
+        <li>Mengembangkan produk digital berkualitas tinggi.</li>
+        <li>Meningkatkan efisiensi bisnis melalui teknologi.</li>
+        <li>Mengutamakan kepuasan pelanggan.</li>
+        <li>Membangun tim profesional dan berintegritas.</li>
+      </ul>
+
+      <h3>Core Values</h3>
+      <div class="values">
+        <div class="value-box">Integrity</div>
+        <div class="value-box">Innovation</div>
+        <div class="value-box">Collaboration</div>
+        <div class="value-box">Excellence</div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- PORTFOLIO / HQ -->
+<section id="portfolio" class="section">
+  <h2>Our Headquarter</h2>
+
+  <div class="hq-container">
+    <div class="hq-item">
+      <div class="circle"></div>
+      <p>Jakarta</p>
+    </div>
+
+    <div class="hq-item">
+      <div class="circle"></div>
+      <p>Bandung</p>
+    </div>
+
+    <div class="hq-item">
+      <div class="circle"></div>
+      <p>Surabaya</p>
+    </div>
+  </div>
+</section>
+
+<!-- MESSAGE -->
+<section id="message" class="section">
+  <h2>Message Us</h2>
+
+  <div class="message-container">
+
+    <form id="messageForm">
+      <label>Nama</label>
+      <input type="text" id="name">
+
+      <label>Tanggal Lahir</label>
+      <input type="date" id="birthdate">
+
+      <label>Jenis Kelamin</label>
+      <div class="radio-group">
+        <input type="radio" name="gender" value="Laki-Laki"> Laki-Laki
+        <input type="radio" name="gender" value="Perempuan"> Perempuan
+      </div>
+
+      <label>Pesan</label>
+      <textarea id="messageText"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="result-box">
+      <p><strong>Current time :</strong> <span id="currentTime"></span></p>
+      <p><strong>Nama :</strong> <span id="resultName"></span></p>
+      <p><strong>Tanggal Lahir :</strong> <span id="resultBirth"></span></p>
+      <p><strong>Jenis Kelamin :</strong> <span id="resultGender"></span></p>
+      <p><strong>Pesan :</strong> <span id="resultMessage"></span></p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  Created by Flopink Digital
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
