@@ -20,7 +20,7 @@ document.getElementById("messageForm").addEventListener("submit", function(e) {
     return;
   }
 
-  // Format tanggal lebih rapi
+  // Format tanggal 
   let formattedDate = new Date(birthdate).toLocaleDateString();
 
   // Current time
