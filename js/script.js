@@ -1,4 +1,3 @@
-// ===== WELCOME SPEECH =====
 let userName = prompt("Masukkan nama anda:");
 
 if (userName && userName.trim() !== "") {
@@ -6,7 +5,6 @@ if (userName && userName.trim() !== "") {
     "Hi " + userName + ", Welcome To Website";
 }
 
-// ===== FORM VALIDATION & SHOW RESULT =====
 document.getElementById("messageForm").addEventListener("submit", function(e) {
   e.preventDefault();
 
@@ -19,11 +17,9 @@ document.getElementById("messageForm").addEventListener("submit", function(e) {
     alert("Semua field harus diisi!");
     return;
   }
-
-  // Format tanggal 
+  
   let formattedDate = new Date(birthdate).toLocaleDateString();
 
-  // Current time
   let currentTime = new Date().toString();
 
   document.getElementById("currentTime").innerText = currentTime;
@@ -32,3 +28,18 @@ document.getElementById("messageForm").addEventListener("submit", function(e) {
   document.getElementById("resultGender").innerText = gender.value;
   document.getElementById("resultMessage").innerText = message;
 });
+
+const sections = document.querySelectorAll(".section");
+
+window.addEventListener("scroll", () => {
+  sections.forEach(section => {
+    const top = section.getBoundingClientRect().top;
+    const trigger = window.innerHeight - 100;
+
+    if (top < trigger) {
+      section.classList.add("show");
+    }
+  });
+});
+
+window.dispatchEvent(new Event("scroll"));

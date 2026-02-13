@@ -1,3 +1,6 @@
+/* ====================
+   GLOBAL
+==================== */
 * {
   margin: 0;
   padding: 0;
@@ -10,17 +13,20 @@ html {
 }
 
 body {
-  background: #f5f5f5;
-  color: #222;
+  background: #fff5f8;
+  color: #333;
 }
 
+/* ====================
+   HEADER
+==================== */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
-  background: white;
-  border-bottom: 1px solid #ccc;
+  background: #ffdce8;
+  border-bottom: 1px solid #f5b9cc;
 }
 
 .logo img {
@@ -29,35 +35,55 @@ header {
 
 nav a {
   text-decoration: none;
-  color: black;
-  border: 1px solid #ccc;
+  color: #d63384;
+  border: 1px solid #f3a7c2;
+  background: white;
   padding: 6px 14px;
   margin-left: 6px;
   font-size: 14px;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 nav a:hover {
-  background: #f0f0f0;
+  background: #ffc6da;
 }
 
+/* ====================
+   SECTION
+==================== */
 .section {
   background: white;
-  padding: 50px 40px;
-  border-bottom: 1px solid #ddd;
+  padding: 60px 40px;
+  border-bottom: 1px solid #ffd3e2;
+
+  /* efek awal pudar */
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+/* saat muncul */
+.section.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .section h2 {
   margin-bottom: 15px;
+  color: #d63384;
 }
 
+/* ====================
+   HERO
+==================== */
 .hero p {
   margin-top: 8px;
+  color: #777;
 }
 
 .banner {
   margin-top: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #f3b5cc;
   overflow: hidden;
 }
 
@@ -66,19 +92,23 @@ nav a:hover {
   display: block;
 }
 
+/* ====================
+   PROFILE
+==================== */
 .profile-header {
   text-align: center;
   margin-bottom: 30px;
 }
 
 .profile-header p {
-  color: #777;
+  color: #999;
   font-size: 14px;
 }
 
 .profile-content h3 {
   margin-top: 20px;
   margin-bottom: 8px;
+  color: #d63384;
 }
 
 .profile-content ul {
@@ -93,12 +123,15 @@ nav a:hover {
 }
 
 .value-box {
-  border: 1px solid #ccc;
+  border: 1px solid #f3b5cc;
   padding: 6px 12px;
-  background: #f7f7f7;
+  background: #ffeaf2;
   font-size: 13px;
 }
 
+/* ====================
+   HQ
+==================== */
 .hq-container {
   display: flex;
   justify-content: center;
@@ -113,11 +146,15 @@ nav a:hover {
 .circle {
   width: 120px;
   height: 120px;
-  border: 2px solid #aaa;
+  border: 2px solid #f3a7c2;
   border-radius: 50%;
   margin-bottom: 10px;
+  background: #fff0f6;
 }
 
+/* ====================
+   MESSAGE
+==================== */
 .message-container {
   display: flex;
   gap: 40px;
@@ -134,7 +171,7 @@ input,
 textarea {
   margin-bottom: 10px;
   padding: 7px;
-  border: 1px solid #ccc;
+  border: 1px solid #f3b5cc;
 }
 
 textarea {
@@ -143,30 +180,37 @@ textarea {
 
 button {
   padding: 7px;
-  border: 1px solid #ccc;
-  background: #eee;
+  border: 1px solid #f3a7c2;
+  background: #ffdce8;
   cursor: pointer;
 }
 
 button:hover {
-  background: #ddd;
+  background: #ffc6da;
 }
 
 .result-box {
   width: 50%;
-  border: 1px solid #ccc;
+  border: 1px solid #f3b5cc;
   padding: 15px;
   font-size: 14px;
-  background: #fafafa;
+  background: #fff7fa;
 }
 
+/* ====================
+   FOOTER
+==================== */
 footer {
-  background: white;
+  background: #ffdce8;
   text-align: right;
   padding: 10px;
   font-size: 12px;
+  color: #a33a6c;
 }
 
+/* ====================
+   RESPONSIVE
+==================== */
 @media (max-width: 768px) {
   .message-container,
   .hq-container {
